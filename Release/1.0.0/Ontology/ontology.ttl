@@ -22,9 +22,8 @@
     dcterms:created "2022-6-3";
     vann:preferredNamespaceUri "http://www.studyroomsmadrid.es/studyRoom/ontology/studyOnt#";
     dcterms:modified "2022-6-3";
-    owl:versionInfo "2.0.0";
-    owl:versionIRI <http://www.studyroomsmadrid.es/studyRoom/ontology/studyOnt/2.0.0>;
-    owl:priorVersion <http://www.studyroomsmadrid.es/studyRoom/ontology/studyOnt/1.0.0>.
+    owl:versionInfo "1.0.0";
+    owl:versionIRI <http://www.studyroomsmadrid.es/studyRoom/ontology/studyOnt/1.0.0>.
 :StudyRoom a owl:Class;
     rdfs:label "studyRoom";
     rdfs:comment "a physical study room".
@@ -34,11 +33,11 @@ aux:isLocated a owl:ObjectProperty;
     rdfs:domain :StudyRoom;
     rdfs:range aux:Location.
 aux:go a owl:ObjectProperty;
-    rdfs:label "go";
-    rdfs:domain aux:Student.
+    rdfs:domain aux:Student;
+    rdfs:label "go".
 aux:hasName a owl:DatatypeProperty;
     rdfs:domain :StudyRoom;
     rdfs:range xsd:string.
 aux:hasCapacity a owl:DatatypeProperty;
-    rdfs:label "capacity";
-    rdfs:domain :StudyRoom.
+    rdfs:domain :StudyRoom;
+    rdfs:label "capacity".
